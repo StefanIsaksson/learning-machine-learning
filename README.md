@@ -2,7 +2,6 @@
 
 ## What
 This repository contains machine learning examples.
-The examples can be opened with Jupyter notebook (https://jupyter.org/) and the code is written in Python.
 
 ## Why
 1. Machine Learning (and AI) is very popular at the moment. I want to get a better feel for what it is.
