@@ -89,3 +89,13 @@ plt.bar(range(10), predictions[0]*100, align='center', alpha=0.5)
 plt.ylabel('Probability (%)')
 plt.title('Predication of first picture')
 plt.show()
+
+# How to save the the trained model to a file
+model.save('mnist_model.h5')
+
+# Recreate the exact same model
+new_model = keras.models.load_model('mnist_model.h5')
+new_model.summary()
+
+loss, acc = new_model.evaluate(test_images, test_labels)
+print("Restored model, accuracy: {:5.2f}%".format(100*acc))
