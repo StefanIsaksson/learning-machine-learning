@@ -17,8 +17,8 @@ def predict_gender(input_file):
     classes = model.predict_classes(images, batch_size=10)
 
     prediction_map = {
-        0 : 'female',
-        1 : 'male'
+        1 : 'female',
+        0 : 'male'
     }
 
     gender_prediction = prediction_map[classes[0]]

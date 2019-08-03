@@ -41,7 +41,7 @@ model_t1.compile(loss="categorical_crossentropy", optimizer="adam", metrics=["ac
 
 model_t1.fit_generator(train_generator,
                     steps_per_epoch=step_size_train,
-                    epochs=2,
+                    epochs=10,
                     validation_data=valid_generator,
                     validation_steps=step_size_valid)
 
