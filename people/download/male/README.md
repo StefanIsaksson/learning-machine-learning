@@ -1,0 +1,1 @@
+Pictures downloaded, resized and classified as males are copied here
