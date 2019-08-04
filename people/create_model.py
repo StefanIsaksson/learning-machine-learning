@@ -1,5 +1,3 @@
-import numpy as np
-from keras.applications import VGG16
 from keras.applications.vgg16 import preprocess_input
 from keras.preprocessing.image import ImageDataGenerator
 from keras.models import Sequential

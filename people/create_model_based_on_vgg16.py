@@ -28,6 +28,7 @@ step_size_valid=valid_generator.n//valid_generator.batch_size
 base_model = VGG16(weights="imagenet", include_top=False, input_shape=(150, 150, 3))
 
 print(base_model.summary())
+plot_model(base_model, to_file="models/vgg16.png", show_shapes=True, show_layer_names=True)
 
 model = Sequential()
 model.add(base_model)

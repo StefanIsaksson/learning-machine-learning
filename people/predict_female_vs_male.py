@@ -28,7 +28,7 @@ def get_model(model_file):
 
 
 def main(input_file=None):
-    model = get_model('male_vs_female_model_USING_transfer_learning.h5')
+    model = get_model('models/male_vs_female_model.h5')
     prediction = predict_gender(model, input_file)
     print(f'"{input_file}" predicted to be {prediction}')
     return prediction

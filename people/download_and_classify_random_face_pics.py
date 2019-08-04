@@ -6,7 +6,7 @@ import predict_female_vs_male as predict
 
 def main():
 
-    model = predict.get_model('male_vs_female_model_USING_transfer_learning.h5')
+    model = predict.get_model('models/male_vs_female_model.h5')
 
     opener = urllib.request.build_opener()
     opener.addheaders = [('User-agent', 'Mozilla/5.0')]
@@ -15,7 +15,7 @@ def main():
     female = 104
     male = 78
 
-    for index_number in range(1, 1001):
+    for index_number in range(1, 10):
         downloaded_file = f'download/original_size/{index_number}.png'
         print(f'Downloaded {downloaded_file}')
         url = f'https://thispersondoesnotexist.com/image'
