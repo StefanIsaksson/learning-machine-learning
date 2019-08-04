@@ -6,7 +6,7 @@ import numpy as np
 
 
 def predict_gender(input_file):
-    model = load_model('male_vs_female_model_WITHOUT_using_transfer_learning.h5')
+    model = load_model('male_vs_female_model_USING_transfer_learning.h5')
 
     img_width, img_height = 150, 150
     img = image.load_img(input_file, target_size=(img_width, img_height))
@@ -17,8 +17,8 @@ def predict_gender(input_file):
     classes = model.predict_classes(images, batch_size=10)
 
     prediction_map = {
-        1 : 'female',
-        0 : 'male'
+        1 : 'male',
+        0 : 'female'
     }
 
     gender_prediction = prediction_map[classes[0]]

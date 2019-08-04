@@ -33,9 +33,7 @@ python predict_female_vs_male.py "example_input/male.png"
 
 ## Measured Model Accuracy
 
-|Model                                           | Accuracy |
-|------------------------------------------------|----------|
-|Transfer learning model stats (2 epochs only ..)|0.8522    |
-|No Transfer learning model stats (10 epochs)    |0.8130    |
-
-
+|Model                                           |Train Accuracy| Valildation Accuracy |
+|------------------------------------------------|--------------|----------------------|
+|Transfer learning model stats                   |0.9987        |0.8814                |
+|No Transfer learning model stats (10 epochs)    |              |0.8130                |
