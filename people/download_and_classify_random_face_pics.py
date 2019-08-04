@@ -3,13 +3,17 @@ import time
 import cv2
 import predict_female_vs_male as predict
 
+
 def main():
+
+    model = predict.get_model('male_vs_female_model_USING_transfer_learning.h5')
+
     opener = urllib.request.build_opener()
     opener.addheaders = [('User-agent', 'Mozilla/5.0')]
     urllib.request.install_opener(opener)
 
-    female = 78
-    male = 61
+    female = 104
+    male = 78
 
     for index_number in range(1, 101):
         downloaded_file = f'download/original_size/{index_number}.png'
@@ -20,8 +24,7 @@ def main():
 
         resized = cv2.resize(img, (200, 200), interpolation = cv2.INTER_AREA)
 
-        prediction = predict.predict_gender(downloaded_file)
-        print(prediction)
+        prediction = predict.predict_gender(model, downloaded_file)
         if prediction == 'male':
             male = male + 1
             output_file = f'./download/{prediction}/{male}.png'

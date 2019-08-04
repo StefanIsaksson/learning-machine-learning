@@ -9,7 +9,7 @@ Open `Anaconda Prompt`.
 
 Create a new conda environment  with Tensorflow. 
 ```
-conda create -n keras_tf_env pillow tensorflow keras
+conda create -n keras_tf_env pydot pillow tensorflow keras
 ```
 
 ### To also run download_and_classify_random_face_pics.py
@@ -37,3 +37,7 @@ python predict_female_vs_male.py "example_input/male.png"
 |------------------------------------------------|--------------|----------------------|
 |Transfer learning model stats                   |0.9987        |0.8814                |
 |No Transfer learning model stats (10 epochs)    |              |0.8130                |
+
+
+20 killar - av dem är 4 fel. 16/20 = 80% rätt
+20 tjejer - av dem är 4 fel. 16/20 = 80% rätt
