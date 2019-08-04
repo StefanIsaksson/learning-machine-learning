@@ -15,7 +15,7 @@ def main():
     female = 104
     male = 78
 
-    for index_number in range(1, 101):
+    for index_number in range(1, 1001):
         downloaded_file = f'download/original_size/{index_number}.png'
         print(f'Downloaded {downloaded_file}')
         url = f'https://thispersondoesnotexist.com/image'
