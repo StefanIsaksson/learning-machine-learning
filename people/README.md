@@ -23,3 +23,5 @@ Read input file and prints prediction if picture is male or female.
 ```
 python predict_female_vs_male.py "example_input/male.png"
 ```
+
+val_loss: 0.5340 - val_acc: 0.8661
