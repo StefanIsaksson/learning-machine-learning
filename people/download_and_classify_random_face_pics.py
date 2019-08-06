@@ -12,10 +12,10 @@ def main():
     opener.addheaders = [('User-agent', 'Mozilla/5.0')]
     urllib.request.install_opener(opener)
 
-    female = 104
-    male = 78
+    female = 1
+    male = 1
 
-    for index_number in range(1, 4000):
+    for index_number in range(1, 5000):
         downloaded_file = f'download/original_size/{index_number}.png'
         print(f'Downloaded {downloaded_file}')
         url = f'https://thispersondoesnotexist.com/image'
